@@ -1,0 +1,16 @@
+{
+  "name": "@gatsby-app/website-green",
+  "version": "1.0.0",
+  "description": "Green Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gatsby",
+    "shared",
+    "theme"
+  ],
+  "author": "Lucas Santos",
+  "license": "MIT"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@gatsby-app/main",
+  "version": "1.0.0",
+  "description": "This repository shows how you can build multiple websites using the same layout, pages, components, services, graphql but changing specific things such as colors, images, styles, images, data, etc. It's possible to build a multiple web application using the same code base. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucashfreitas/gatsby-monorepository-shared-theme.git"
+  },
+  "keywords": [
+    "gatsby",
+    "monorepository",
+    "gatsby",
+    "theme",
+    "gatsby",
+    "shared",
+    "components"
+  ],
+  "author": "Lucas Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucashfreitas/gatsby-monorepository-shared-theme/issues"
+  },
+  "homepage": "https://github.com/lucashfreitas/gatsby-monorepository-shared-theme#readme",
+  "dependencies": {
+    "gatsby": "^2.19.34",
+    "react": "^16.13.0"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}
