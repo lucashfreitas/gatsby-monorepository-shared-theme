@@ -1,4 +1,4 @@
-//TODO: add flow type or typescript to type 'themeOptions'
+//TODO:  add flow type or typescript to type 'themeOptions'
 //TODO: Add joi validation for themeOptions
 
 module.exports = (themeOptions ) => {
