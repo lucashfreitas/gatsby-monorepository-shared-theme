@@ -1,5 +1,5 @@
 {
-  "name": "@gatsby-app/shared",
+  "name": "@lucasfsantos/shared-theme",
   "version": "1.0.0",
   "description": "Shared Theme",
   "main": "index.js",
@@ -12,5 +12,8 @@
     "theme"
   ],
   "author": "Lucas Santos",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "styled-components": "^5.0.1"
+  }
 }

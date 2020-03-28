@@ -1,5 +1,8 @@
 # gatsby-monorepository-shared-theme  - Under development :runner:
 
+Blog Post: [https://lucasfsantos.com/gatsby-react-shared-theme-monorepository](https://lucasfsantos.com/gatsby-react-shared-theme-monorepository)
+
+
 This repository shows how you can setup multiple websites using the same "layout" theme and changing specific things as colors, images. This makes possible to build a SaaS application for multiple customers using the same code base, for example.
 
 ![Shared-theme-arch.png](https://d33wubrfki0l68.cloudfront.net/29613106f229b55f39ef78a2eb1bff263ed5ef57/0a1ce/media/gatsby-theme-right.png)

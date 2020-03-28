@@ -1,6 +1,7 @@
 {
   "name": "@gatsby-app/main",
   "version": "1.0.0",
+  "private":true,
   "description": "This repository shows how you can build multiple websites using the same layout, pages, components, services, graphql but changing specific things such as colors, images, styles, images, data, etc. It's possible to build a multiple web application using the same code base. ",
   "main": "index.js",
   "scripts": {
@@ -19,6 +20,11 @@
     "shared",
     "components"
   ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "author": "Lucas Santos",
   "license": "MIT",
   "bugs": {
