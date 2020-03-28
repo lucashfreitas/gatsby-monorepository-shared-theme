@@ -4,7 +4,7 @@ export interface ThemeOptions {
     contentfulConfig: {
       accessToken: string;
       spaceId: string;
-      enviroment: string;
+      environment: string;
       downloadLocal: boolean;
     }
   
@@ -23,9 +23,6 @@ export interface ThemeOptions {
         primary: string;
         secondary: string;
       }
-    }
-  
-  
-  
+    } 
   }
   

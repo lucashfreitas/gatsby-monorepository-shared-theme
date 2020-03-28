@@ -5,7 +5,10 @@
   "description": "This repository shows how you can build multiple websites using the same layout, pages, components, services, graphql but changing specific things such as colors, images, styles, images, data, etc. It's possible to build a multiple web application using the same code base. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:blue": "lerna exec yarn start --scope @lucasfsantos/blue-app",
+    "build:blue": "lerna exec yarn build --scope @lucasfsantos/blue-app",
+    "start:green": "lerna exec yarn start --scope @lucasfsantos/green-app",
+    "build:green": "lerna exec yarn build --scope @lucasfsantos/blue-app"
   },
   "repository": {
     "type": "git",

@@ -3,16 +3,22 @@
 
 module.exports = {
     plugins: [
-      `gatsby-plugin-typescript`,
       {
-        resolve: `gatsby-source-contentful`,
-        options: {
-          environment: themeOptions.contentfulConfig.environment,
-          spaceId: themeOptions.contentfulConfig.spaceId,
-          accessToken: themeOptions.contentfulConfig.accessToken,
-          downloadLocal: themeOptions.contentfulConfig.downloadLocal,
-        },
-      },
+
+      resolve: '@lucasfsantos/shared-theme',
+      options: {
+        config: {
+          contentfulConfig: {
+            environment: process.env.CONTENTFUL_ENVIRONMENT,
+            spaceId: process.env.CONTENTFUL_SPACE_ID,
+            accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+            downloadLocal: true,
+  
+          }
+        }
+        
+      }
+    }
 
       
     ],
