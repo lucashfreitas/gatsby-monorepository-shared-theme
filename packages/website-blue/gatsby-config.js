@@ -2,7 +2,7 @@
 //TODO: Add joi validation for themeOptions
 
 require('dotenv').config({
-  path: `.env`
+  path: `.env`,
 });
 
 module.exports = {
@@ -10,15 +10,18 @@ module.exports = {
     {
       resolve: '@lucasfsantos/shared-theme',
       options: {
+        theme: {
+          variant: 'blueApp',
+        },
         config: {
           contentful: {
             environment: process.env.CONTENTFUL_ENVIRONMENT,
             spaceId: process.env.CONTENTFUL_SPACE_ID,
             accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-            downloadLocal: true
-          }
-        }
-      }
-    }
-  ]
+            downloadLocal: true,
+          },
+        },
+      },
+    },
+  ],
 };

@@ -1,8 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
+import Container from '../styles/layout/container';
+
+import useSharedThemeQuery from '../queries/shared-theme-query';
 
 const Colors = () => {
-  return <div>abc</div>;
+  return <Container variant={useSharedThemeQuery().variant}>abc</Container>;
 };
 
 export default Colors;
