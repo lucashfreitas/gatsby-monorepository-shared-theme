@@ -1,6 +1,12 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-const useSharedThemeQuery = () => {
+interface SharedThemeQuery {
+  theme: {
+    variant: string;
+  };
+}
+
+const useSharedThemeQuery = (): SharedThemeQuery => {
   const query = useStaticQuery(graphql`
     query {
       sitePlugin(name: { eq: "@lucasfsantos/shared-theme" }) {
@@ -13,7 +19,7 @@ const useSharedThemeQuery = () => {
     }
   `);
 
-  return query.sitePlugin.pluginOptions.theme;
+  return query.sitePlugin.pluginOptions;
 };
 
 export default useSharedThemeQuery;

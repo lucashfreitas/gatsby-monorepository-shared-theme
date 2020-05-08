@@ -7,6 +7,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap ",
     "start:blue": "lerna exec yarn start --scope @lucasfsantos/blue-app",
+    "clean:blue": "lerna exec yarn clean --scope @lucasfsantos/blue-app",
     "build:blue": "lerna exec yarn build --scope @lucasfsantos/blue-app",
     "start:green": "lerna exec yarn start --scope @lucasfsantos/green-app",
     "build:green": "lerna exec yarn build --scope @lucasfsantos/blue-app"
@@ -36,7 +37,22 @@
   },
   "homepage": "https://github.com/lucashfreitas/gatsby-monorepository-shared-theme#readme",
   "devDependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "@types/react-helmet": "^5.0.15",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-typescript": "^7.2.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "gatsby-cli": "^2.11.3",
     "lerna": "^3.20.2",
-    "gatsby-cli": "^2.11.3"
-  }
+    "prettier": "^2.0.5",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {}
 }

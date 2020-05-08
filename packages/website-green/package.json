@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "npx gatsby develop",
-    "build": "npx gatsby build"
+    "build": "npx gatsby build",
+    "clean": "npx gatsby clean"
   },
   "dependencies": {
+    "gatsby-plugin-typescript": "^2.3.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "gatsby": "^2.20.8",
