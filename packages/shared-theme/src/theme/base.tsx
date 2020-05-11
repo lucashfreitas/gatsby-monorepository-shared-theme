@@ -1,21 +1,12 @@
-export default {
+import colors from './colors';
+
+const baseTheme = {
   container: {
-    default: {
+    container: {
       background: 'white',
     },
-    blueApp: {
-      background: 'blue',
-    },
-    greenApp: {
-      background: 'green',
-    },
   },
-  colors: {
-    text: '#333',
-    background: '#fff',
-    primary: '#639',
-    secondary: '#ff6347',
-  },
+  colors,
   fonts: {
     body: 'system-ui, sans-serif',
     heading: 'system-ui, sans-serif',
@@ -33,3 +24,5 @@ export default {
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
 };
+
+export default baseTheme;

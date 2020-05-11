@@ -5,6 +5,7 @@ require('dotenv').config({
   path: `.env`,
 });
 
+const colors = require('./src/theme/colors');
 module.exports = {
   plugins: [
     'gatsby-plugin-typescript',
@@ -12,7 +13,7 @@ module.exports = {
       resolve: '@lucasfsantos/shared-theme',
       options: {
         theme: {
-          variant: 'greenApp',
+          colors,
         },
         config: {
           contentful: {

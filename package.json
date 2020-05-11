@@ -6,10 +6,13 @@
   "main": "index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap ",
+    "prepare": "lerna run prepare",
+    "clean": "lerna exec yarn clean --scope @lucasfsantos/blue-app @lucasfsantos/green-app ",
     "start:blue": "lerna exec yarn start --scope @lucasfsantos/blue-app",
     "clean:blue": "lerna exec yarn clean --scope @lucasfsantos/blue-app",
     "build:blue": "lerna exec yarn build --scope @lucasfsantos/blue-app",
     "start:green": "lerna exec yarn start --scope @lucasfsantos/green-app",
+    "clean:green": "lerna exec yarn clean --scope @lucasfsantos/blue-app",
     "build:green": "lerna exec yarn build --scope @lucasfsantos/blue-app"
   },
   "repository": {

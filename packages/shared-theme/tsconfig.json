@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./lib",
+    "paths": {
+      "@lucasfsantos/shared-theme": ["./shared-theme/src"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "allowJs": true,
+    "strict": false,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "types": [],
+    "jsx": "react",
+    "lib": ["dom", "es2015", "es2017"]
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js"],
+  "exclude": [
+    "**/node_modules",
+    "**/dist",
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*"
+  ]
+}

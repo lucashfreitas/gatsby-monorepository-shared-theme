@@ -4,8 +4,8 @@
 module.exports = (themeOptions) => {
   return {
     plugins: [
-      'gatsby-plugin-theme-ui',
       'gatsby-plugin-typescript',
+      'gatsby-plugin-styled-components',
       {
         resolve: `gatsby-source-contentful`,
         options: {

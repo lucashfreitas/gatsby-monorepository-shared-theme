@@ -2,8 +2,10 @@
   "name": "@lucasfsantos/shared-theme",
   "version": "1.0.0",
   "description": "Shared Theme",
-  "main": "index.js",
+  "main": "lib/src/index.js",
   "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "yarn build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,20 +16,26 @@
   "author": "Lucas Santos",
   "license": "MIT",
   "dependencies": {
-    "@emotion/core": "^10.0.28",
-    "@emotion/styled": "^10.0.27",
+    "@styled-system/theme-get": "^5.1.2",
     "gatsby": "^2.20.8",
-    "gatsby-plugin-theme-ui": "^0.3.0",
+    "gatsby-plugin-styled-components": "^3.3.1",
     "gatsby-plugin-typescript": "^2.3.1",
     "gatsby-source-contentful": "^2.2.5",
+    "lodash.merge": "^4.6.2",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "theme-ui": "^0.3.1",
-    "prop-types": "^15.7.2"
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
-    "@types/prop-types": "^15.7.3",
+    "@types/lodash.merge": "^4.6.6",
     "@types/node": "^13.11.0",
-    "@types/theme-ui": "^0.3.1"
+    "@types/prop-types": "^15.7.3",
+    "@types/styled-components": "^5.1.0",
+    "@types/styled-system": "^5.1.9",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^7.0.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   }
 }

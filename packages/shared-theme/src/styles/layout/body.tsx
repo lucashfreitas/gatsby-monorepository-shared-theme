@@ -1,7 +1,6 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import React from 'react';
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
+
 import PropTypes from 'prop-types';
 
 const StyledBody = styled.body`

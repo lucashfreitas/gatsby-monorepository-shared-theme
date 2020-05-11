@@ -1,4 +1,9 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
+import { useStaticQuery } from 'gatsby';
+
+/*
+TODO: fix interface for global name
+*/
 
 interface SharedThemeQuery {
   theme: {
@@ -12,14 +17,16 @@ const useSharedThemeQuery = (): SharedThemeQuery => {
       sitePlugin(name: { eq: "@lucasfsantos/shared-theme" }) {
         pluginOptions {
           theme {
-            variant
+            colors {
+              primary
+            }
           }
         }
       }
     }
   `);
 
-  return query.sitePlugin.pluginOptions;
+  return query.sitePlugin.pluginOptions.theme;
 };
 
 export default useSharedThemeQuery;
