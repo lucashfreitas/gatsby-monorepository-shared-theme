@@ -7,13 +7,14 @@
   "scripts": {
     "bootstrap": "lerna bootstrap ",
     "prepare": "lerna run prepare",
-    "clean": "lerna exec yarn clean --scope @lucasfsantos/blue-app @lucasfsantos/green-app ",
-    "start:blue": "lerna exec yarn start --scope @lucasfsantos/blue-app",
-    "clean:blue": "lerna exec yarn clean --scope @lucasfsantos/blue-app",
-    "build:blue": "lerna exec yarn build --scope @lucasfsantos/blue-app",
-    "start:green": "lerna exec yarn start --scope @lucasfsantos/green-app",
-    "clean:green": "lerna exec yarn clean --scope @lucasfsantos/blue-app",
-    "build:green": "lerna exec yarn build --scope @lucasfsantos/blue-app"
+    "clean": "lerna exec yarn clean --scope @lucasfsantos/cat-app @lucasfsantos/dog-app ",
+    "start:cat": "lerna exec yarn start --scope @lucasfsantos/cat-app",
+    "clean:cat": "lerna exec yarn clean --scope @lucasfsantos/cat-app",
+    "build:cat": "lerna exec yarn build --scope @lucasfsantos/cat-app",
+    "start:dog": "lerna exec yarn start --scope @lucasfsantos/dog-app",
+    "clean:dog": "lerna exec yarn clean --scope @lucasfsantos/dog-app",
+    "build:dog": "lerna exec yarn build --scope @lucasfsantos/dog-app",
+    "lint": "yarn lint --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",

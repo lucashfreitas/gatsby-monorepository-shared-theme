@@ -9,12 +9,23 @@ const colors = require('./src/theme/colors');
 
 module.exports = {
   plugins: [
-    'gatsby-plugin-styled-components',
-
     'gatsby-plugin-typescript',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     {
       resolve: '@lucasfsantos/shared-theme',
       options: {
+        app: {
+          name: 'Cats App',
+        },
         theme: {
           colors,
         },

@@ -7,7 +7,7 @@ interface ContainerProps {
 }
 
 const StyledContainer = styled.div`
-  background-color: ${themeGet('colors.primary', '#028489')};
+  background-color: ${themeGet('colors.secondary', '#028489')};
   display: flex;
 `;
 

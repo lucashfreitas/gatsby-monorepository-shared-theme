@@ -5,13 +5,28 @@ require('dotenv').config({
   path: `.env`,
 });
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const colors = require('./src/theme/colors');
+
 module.exports = {
   plugins: [
     'gatsby-plugin-typescript',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     {
       resolve: '@lucasfsantos/shared-theme',
       options: {
+        app: {
+          name: 'DOG App',
+        },
         theme: {
           colors,
         },

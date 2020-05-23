@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "noEmit": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "emitDecoratorMetadata": true,
@@ -11,7 +10,7 @@
     "strict": false,
     "baseUrl": ".",
     "noImplicitAny": true,
-    "module": "commonjs",
+    "module": "CommonJS",
     "target": "esnext",
     "jsx": "react",
     "lib": ["dom", "es2015", "es2017"]

@@ -1,10 +1,7 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
-    "outDir": "./lib",
-    "paths": {
-      "@lucasfsantos/shared-theme": ["./shared-theme/src"]
-    },
+    "rootDir": "src",
+    "outDir": "lib",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "emitDecoratorMetadata": true,
@@ -20,8 +17,9 @@
     "jsx": "react",
     "lib": ["dom", "es2015", "es2017"]
   },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js"],
+  "include": ["**/*.ts", "**/*.tsx", "src/*.js"],
   "exclude": [
+    "lib",
     "**/node_modules",
     "**/dist",
     "node_modules",

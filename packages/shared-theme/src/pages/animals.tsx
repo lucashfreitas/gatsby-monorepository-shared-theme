@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Container from '../styles/layout/container';
 
 import AppContainer from '../containers/app';
+import useAppConfigQuery from '../queries/appConfigQuery';
+import BannerImage from '../components/bannerImage';
 
 interface ContainerProps {
   children: React.ReactNode;
@@ -17,19 +19,25 @@ const SubTitle = styled.p`
   color: ${themeGet('colors.secondary', 'black')};
 `;
 
-const Colors: React.FC = () => {
+const Animals: React.FC = () => {
+  const appSettings = useAppConfigQuery();
+
   return (
     <AppContainer>
-      <Title>Looks how its flexibe and powerful.</Title>
-      <SubTitle>
-        I can create same pages structures sharing business logics but using
-        different styles. All apps will have a color page but with custom data,
-        but all the hard work and business logic are done only once by the sared
-        theme. Ins't amazing?
-      </SubTitle>
+      <Title>
+        Wow, this is {appSettings.name} created by the shared theme.
+      </Title>
+
+      <SubTitle>{appSettings.name} secondary color</SubTitle>
       <Container>Just testing color background</Container>
+      <div>
+        <p>
+          Banner Image was defined in child websites but is also available here
+        </p>
+        <BannerImage />
+      </div>
     </AppContainer>
   );
 };
 
-export default Colors;
+export default Animals;

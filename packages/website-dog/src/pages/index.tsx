@@ -1,21 +1,21 @@
 import React from 'react';
 
+import { AppContainer } from '@lucasfsantos/shared-theme';
 import { themeGet } from '@styled-system/theme-get';
 import { Link } from 'gatsby';
-import { AppContainer } from '@lucasfsantos/shared-theme';
 import styled from 'styled-components';
 
 const Title = styled.h1`
   color: ${themeGet('colors.primary', 'black')};
 `;
 
-const Paragraph = styled.p`
+const Description = styled.p`
   color: ${themeGet('colors.primary', 'black')};
 `;
 
-const Blue: React.FC = () => (
+const Dog: React.FC = () => (
   <AppContainer>
-    <Title>This is the blue App</Title>
+    <Title>This is the dogs App</Title>
     <Paragraph>Look how it cool:</Paragraph>
     <Paragraph>
       We can define our own style and use it here at the main web application
@@ -32,8 +32,8 @@ const Blue: React.FC = () => (
       import graphQLQueries from the plugin, components and everything else.
     </Paragraph>
     Check below a page created by the shared theme!
-    <Link to="/colors">access colors page</Link>
+    <Link to="/animals">access animals page created by shared plugin</Link>
   </AppContainer>
 );
 
-export default Blue;
+export default Dog;

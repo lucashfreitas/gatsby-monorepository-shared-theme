@@ -1,7 +1,7 @@
 const colors = {
   primary: 'green',
   primaryHover: 'green',
-  secondary: '#90EE90',
+  secondary: 'lightgreen',
   secondaryHover: 'light-green',
 };
 
