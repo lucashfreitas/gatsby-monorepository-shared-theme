@@ -5021,12 +5021,12 @@ content-type@^1.0.4, content-type@~1.0.4:
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.4.tgz#e138cc75e040c727b1966fe5e5f8c9aee256fe3b"
   integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
 
-contentful-resolve-response@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/contentful-resolve-response/-/contentful-resolve-response-1.1.4.tgz#9eb656876eecb2cd00444f0adf26bd91a5ec1992"
-  integrity sha512-oFq6n6zjbiwD9/7mBa8YHPwvPM0B0D4uOgg1n/rVzpQPhCrzeIixNj6fbJAbDiJt05rZqxiY3K1Db7pPRhRaZw==
+contentful-resolve-response@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/contentful-resolve-response/-/contentful-resolve-response-1.2.2.tgz#3f83a5f4742854de740e250a11020b4fb646da91"
+  integrity sha512-KyRz05f2YFJDSFs/L5jtsptbL5Fk3+ukSjRF94zFXq0FOtYoaxyCbqKgHhK2+3hlipxVQ+KGRus/tSaD6PoPMg==
   dependencies:
-    lodash "^4.17.4"
+    lodash "^4.17.15"
 
 contentful-sdk-core@^6.4.5:
   version "6.4.5"
@@ -5036,13 +5036,13 @@ contentful-sdk-core@^6.4.5:
     lodash "^4.17.10"
     qs "^6.5.2"
 
-contentful@^7.14.5:
-  version "7.14.5"
-  resolved "https://registry.yarnpkg.com/contentful/-/contentful-7.14.5.tgz#ca8ff1301b1278b88bf475cfc87ee9ba9f196034"
-  integrity sha512-Ou3L6xcVXV2TjC9uaw9w5OGp4hHGeQ9wCwsuROKpPEhb53GdcY962zxVzMZ7YTt/WmKkMrZRFsGMWCi3yS6p9g==
+contentful@^7.14.6:
+  version "7.14.6"
+  resolved "https://registry.yarnpkg.com/contentful/-/contentful-7.14.6.tgz#da692d68f361ceec14045c6114425579cddbfab9"
+  integrity sha512-7/Xqw/UT0/zW9DeVGAwtW4twGbThIc6rbLATrhUn7AXt/xTCFzgPiJxHgRU9gmr733q/Wckv663B51abDMS9Nw==
   dependencies:
     axios "^0.19.1"
-    contentful-resolve-response "^1.1.4"
+    contentful-resolve-response "^1.2.2"
     contentful-sdk-core "^6.4.5"
     json-stringify-safe "^5.0.1"
     lodash "^4.17.11"
@@ -7753,9 +7753,9 @@ gatsby-recipes@^0.1.51:
     xstate "^4.11.0"
 
 gatsby-source-contentful@^2.2.5:
-  version "2.3.30"
-  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.3.30.tgz#eb745bb0c4e44f7abd93ac98d9064fd484d12a91"
-  integrity sha512-UdkzeTtP4GHI04iP4Ap8zlyrlz9+VEW8jOOBI0Tkisb9iUGoQjtRAwSq73Kh9fzCSJ1roTGCj202cRqdmYlCYA==
+  version "2.3.31"
+  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.3.31.tgz#4a0bafeb4645d5d465b4a9486e50dd6e64c96341"
+  integrity sha512-128SP8rHGTIZEsJU0UOYkc9eHfU86XKqsrhqIsWa3rk9vdSiQBYAiRaHaKZ+P5prSIP3rMqOF6loFmi2OWMyZA==
   dependencies:
     "@babel/runtime" "^7.10.3"
     "@contentful/rich-text-types" "^13.4.0"
@@ -7764,7 +7764,7 @@ gatsby-source-contentful@^2.2.5:
     base64-img "^1.0.4"
     bluebird "^3.7.2"
     chalk "^2.4.2"
-    contentful "^7.14.5"
+    contentful "^7.14.6"
     deep-map "^1.5.0"
     fs-extra "^8.1.0"
     gatsby-core-utils "^1.3.13"
